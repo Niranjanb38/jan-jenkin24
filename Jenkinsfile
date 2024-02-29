@@ -11,7 +11,7 @@ pipeline {
         }
         
     }
-    stage { 
+
         stage ('test') {
             steps {
                 sh '''
@@ -20,8 +20,8 @@ pipeline {
                     sleep 5
                     '''
             }
-            
-        }
+        }   
         
-    }
+        
+
 }
