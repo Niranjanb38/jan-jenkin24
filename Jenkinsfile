@@ -9,6 +9,13 @@ pipeline {
             }
             
         }
+        stage ('Build1') {
+            steps {
+                 sh 'sleep 10'
+                
+            }
+            
+        }
         
 
         stage('Test') {
@@ -16,6 +23,15 @@ pipeline {
                 sh '''
                     #!/bin/bash
                     ls -lrt
+                    sleep 10
+                '''
+            }
+        }   
+        stage('Test1') {
+            steps {
+                sh '''
+                    #!/bin/bash
+                    pwd
                     sleep 5
                 '''
             }
