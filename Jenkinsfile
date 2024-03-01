@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        lebel 'slave1'
+    }
 
     stages {
         stage ('Build') {
