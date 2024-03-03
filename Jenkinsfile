@@ -15,7 +15,7 @@ pipeline {
             steps {
                  sh '''
                     set +x
-                    echo $TEST $TEST1
+                    echo $TEST $BUILD_TEST
                     sleep 5
                     '''
                 
