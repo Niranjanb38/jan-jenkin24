@@ -11,6 +11,7 @@ pipeline {
         }
             steps {
                  sh '''
+                    set +x
                     echo $TEST $TEST1
                     sleep 5
                     '''
@@ -22,6 +23,7 @@ pipeline {
         agent any
             steps {
                  sh '''
+                    set +x
                     #!/bin/bash
                     ls -lrt
                     echo $TEST $TEST1
