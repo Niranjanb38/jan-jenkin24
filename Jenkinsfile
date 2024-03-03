@@ -6,6 +6,9 @@ pipeline {
         }
     stages {
          stage('Build') {
+           environment {
+            BUILD_TEST = "buildtest123"
+           } 
             agent {
                 label 'slave1' 
         }
