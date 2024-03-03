@@ -2,9 +2,9 @@ pipeline {
     agent none
 
     stages {
-         stage ('Build') {
-        agent {
-        lebel 'slave1' 
+         stage('Build') {
+            agent {
+                label 'slave1' 
         }
             steps {
                  sh 'sleep 5'
